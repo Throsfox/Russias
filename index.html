@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.T.R</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <main> <!-- Main é a parte principal do site -->
+    
+        <nav class="navbar bg-dark fixed-top">
+            <div class="container-fluid position-relative">
+
+                <!-- Bandeira (abre o menu) -->
+                <img src="russia.svg"
+                    alt="Bandeira da Rússia"
+                    width="102"
+                    height="61"
+                    role="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    style="cursor: pointer;">
+
+                <!-- Texto centralizado -->
+                <p class="tituloNavCentral m-0 text-white">Pontos Turísticos da Rússia</p>
+
+                <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Navegação</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item"><a class="nav-link text-white" href="#Ho">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#P">Locais</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#Cont">Contato</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#Curi">Curiosidades</a></li>
+                        </ul>
+                        <button id="botao-darkmode" class="btn btn-light">
+                            🌙
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <header id="Ho"> <!-- Cabeçalho com título, subtítulo e imagem -->
+            <h1>Viajei para a Rússia. Para onde vou?</h1>
+            <h2>Descubra os encantos da Rússia: cultura, história e paisagens deslumbrantes!</h2> 
+        </header>
+
+        <div class="intro">
+            <h1>Sobre nós</h1> <!-- Seção sobre a equipe com parágrafo e lista ordenada -->
+            <p>Somos uma equipe apaixonada por compartilhar as belezas e riquezas culturais da Rússia.<br> Nosso objetivo é proporcionar informações detalhadas e inspiradoras sobre os principais pontos turísticos do país.<br> Dentre eles:</p>
+            <ul class="primeiralista"> <!-- Lista -->
+                <li>Moscow</li>
+                <li>São Petersburgo</li>
+                <li>Kazan</li>
+                <li>Síberia</li>
+                <li>Cáucaso</li>
+            </ul>
+        </div>
+        
+        <div class="cards">
+
+            <section id="P1">
+                <h3>Catedral de São Basílio</h3>
+                <a href="https://pt.wikipedia.org/wiki/Catedral_de_S%C3%A3o_Bas%C3%ADlio">
+                    <img src="imagens/Catedral de São Basílio.jpg">
+                </a>
+                <p>A Catedral de São Basílio, localizada na Praça Vermelha em Moscou, é um dos marcos mais icônicos da Rússia. Construída no século XVI por ordem do czar Ivan, o Terrível, sua arquitetura colorida representa o auge da arte religiosa russa.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P2">
+                <h3>Kremlin de Moscou</h3>
+                <a href="https://pt.wikipedia.org/wiki/Kremlin_de_Moscovo">
+                    <img src="imagens/Kremlin de Moscov.jpg">
+                </a>
+                <p>O Kremlin de Moscou é uma fortaleza histórica no coração da capital russa. Sede do governo e residência presidencial, abriga catedrais e palácios importantes, sendo Patrimônio Mundial da UNESCO.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P3">
+                <h3>Praça Vermelha</h3>
+                <a href="https://pt.wikipedia.org/wiki/Pra%C3%A7a_Vermelha">
+                    <img src="imagens/Praça Vermelha.jpg">
+                </a>
+                <p>A Praça Vermelha é o centro histórico de Moscou, cercada por construções emblemáticas como o Kremlin e a Catedral de São Basílio. Foi palco de inúmeros eventos marcantes da história russa.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P4">
+                <h3>Teatro Bolshoi</h3>
+                <a href="https://pt.wikipedia.org/wiki/Teatro_Bolshoi">
+                    <img src="imagens/Teatro Bolshoi.jpg">
+                </a>
+                <p>O Teatro Bolshoi é um dos mais prestigiados teatros de ópera e balé do mundo. Fundado em 1776, possui arquitetura imponente e tradição artística reconhecida internacionalmente.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P5">
+                <h3>Museu Hermitage</h3>
+                <a href="https://pt.wikipedia.org/wiki/Hermitage">
+                    <img src="imagens/Museu Hermitage.jpg">
+                </a>
+                <p>O Museu Hermitage, em São Petersburgo, é um dos maiores museus do mundo, com mais de 3 milhões de obras. Ocupa o famoso Palácio de Inverno e abriga pinturas de grandes mestres europeus.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P6">
+                <h3>Palácio de Inverno</h3>
+                <a href="https://pt.wikipedia.org/wiki/Pal%C3%A1cio_de_Inverno">
+                    <img src="imagens/Palácio de Inverno.jpg">
+                </a>
+                <p>O Palácio de Inverno foi residência oficial dos czares russos e hoje integra o Hermitage. Sua arquitetura barroca e interiores luxuosos o tornam um dos prédios mais impressionantes da Europa.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P7">
+                <h3>Lago Baikal</h3>
+                <a href="https://pt.wikipedia.org/wiki/Lago_Baikal">
+                    <img src="imagens/Lago Baikal.jpg">
+                </a>
+                <p>O Lago Baikal, na Sibéria, é o lago mais profundo e antigo do mundo. Suas águas extremamente claras e paisagens naturais fascinantes atraem turistas o ano inteiro.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P8">
+                <h3>Fortaleza de São Pedro e São Paulo</h3>
+                <a href="https://pt.wikipedia.org/wiki/Fortaleza_de_S%C3%A3o_Pedro_e_S%C3%A3o_Paulo">
+                    <img src="imagens/Fortaleza de Pedro e Paulo.jpg">
+                </a>
+                <p>A Fortaleza de São Pedro e São Paulo marca o local de fundação de São Petersburgo. Abriga o mausoléu dos czares da dinastia Romanov e construções militares históricas.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P9">
+                <h3>Ferrovia Transiberiana</h3>
+                <a href="https://pt.wikipedia.org/wiki/Ferrovia_Transiberiana">
+                    <img src="imagens/Transiberiana.jpg">
+                </a>
+                <p>A Ferrovia Transiberiana é a maior linha ferroviária do mundo, cruzando a Rússia de Moscou até o extremo leste. A rota oferece vistas únicas de florestas, montanhas e regiões geladas.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P10">
+                <h3>Palácio de Catarina</h3>
+                <a href="https://pt.wikipedia.org/wiki/Pal%C3%A1cio_de_Catarina">
+                    <img src="imagens/Palacio de Catarina.jpg">
+                </a>
+                <p>O Palácio de Catarina, famoso pela deslumbrante Sala de Âmbar, serviu como residência de verão da família imperial. Sua arquitetura barroca é uma das mais belas da Rússia.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P11">
+                <h3>Monte Elbrus</h3>
+                <a href="https://pt.wikipedia.org/wiki/Monte_Elbrus">
+                    <img src="imagens/Monte Elbrus.jpg">
+                </a>
+                <p>O Monte Elbrus, no Cáucaso, é o ponto mais alto da Europa. Popular entre alpinistas, apresenta paisagens nevadas e faz parte dos famosos Sete Cumes do montanhismo.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+            <section id="P12">
+                <h3>Ilha de Kizhi</h3>
+                <a href="https://pt.wikipedia.org/wiki/Kizhi">
+                    <img src="imagens/Ilha de Kizhi.jpg">
+                </a>
+                <p>A Ilha de Kizhi é conhecida por suas igrejas e construções de madeira do século XVIII. O conjunto arquitetônico Kizhi Pogost é Patrimônio da Humanidade pela UNESCO.</p>
+                <div class="botoes-card">
+                    <button class="btn-like"><img src="imagens/like.png"><span class="contador-like">0</span></button>
+                    <button class="btn-coment"><img src="imagens/post.png"></button>
+                    <button class="btn-dislike"><img src="imagens/dislike.png"><span class="contador-dislike">0</span></button>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="mensagem"> <!-- Seção de contato com formulário -->
+            <section id="Cont">
+                <h2>Entre em contato</h2>
+                <p>Quer compartilhar experiências e pontos interessantes sobre a Rússia?<br> Preencha o formulário abaixo:</p>
+                    <form>
+                        <fieldset>
+                            <legend>Local para contato</legend>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+            </section>
+        </div>
+
+        <div class="curiosidades"> <!-- Seção de curiosidades -->
+            <h2 id="Curi">Curiosidades sobre a Rússia</h2>
+            <video controls width="300" height="530">
+                <source src="Video da russia Trabalho.mp4" type="video/mp4">
+                <track src="Curiosidades Sobre a Rússia(720P_HD) legenda.vtt" kind="subtitles" srclang="pt" label="Português">
+            </video>
+        </div>
+
+    </main>
+
+    <!-- MODAL DE COMENTÁRIOS -->
+<div id="modal-comentarios" class="modal-comentario">
+    <div class="modal-content">
+        <span class="fechar-modal">&times;</span>
+        <h2 id="titulo-ponto">Adicionar Comentário</h2>
+
+        <textarea id="campo-comentario" placeholder="Escreva seu comentário..."></textarea>
+
+        <button id="btn-salvar-comentario">Enviar comentário</button>
+
+        <h3>Comentários:</h3>
+        <div id="lista-comentarios"></div>
+    </div>
+</div>
+
+    <footer> <!-- Rodapé com informações de contato e links de redes sociais -->
+        <p>Siga-nos nas redes sociais:</p>
+        <dl> <!-- Links de redes sociais. E o fato de estar sem o <dd> é propósito de estilo -->
+            <dt><a href="#">Facebook</a></dt>
+            <dt><a href="#">Instagram</a></dt>
+            <dt><a href="#">Twitter</a></dt>
+        </dl>
+        <p>&copy; 2025 Turismo russo - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102" height="61">
+            <!-- Contorno preto da bandeira -->
+            <rect x="0" y="0" width="102" height="61" fill="none" stroke="black" stroke-width="4" opacity="100%"></rect>
+            <!-- Faixa branca -->
+            <rect x="1" y="1" width="100" height="20" fill="white" />
+
+        <!-- Faixa azul -->
+        <rect x="1" y="20" width="100" height="20" fill="blue" />
+
+        <!-- Faixa vermelha -->
+        <rect x="1" y="40" width="100" height="20" fill="red" />
+    </svg>
