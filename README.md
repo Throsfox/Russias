@@ -23,7 +23,6 @@ The goal is to provide a clean, simple and responsive interface while practicing
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- *(adicionar outras tecnologias, se houver)*
 
 ---
 
